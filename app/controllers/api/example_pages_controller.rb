@@ -1,5 +1,7 @@
 class Api::ExamplePagesController < ApplicationController
   def hello_method
+    @name = "brian"
+    @time = Time.now.strftime("%A, %b %d")
     render 'hello.json.jb'
   end
 

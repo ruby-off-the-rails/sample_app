@@ -1,1 +1,1 @@
-{message: "brian", time: Time.now.strftime("%A, %b %d")}
+{message: @name, time: @time}
