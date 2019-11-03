@@ -6,6 +6,8 @@ class Api::ExamplePagesController < ApplicationController
   end
 
   def next_method
-    render json: {message: "this is the second one"}
+    # render json: {message: "this is the second one"}
+    @message = "this is the second one"
+    render 'next.json.jb'
   end
 end
