@@ -1,6 +1,6 @@
 class Api::ExamplePagesController < ApplicationController
   def hello_method
-    render json: {message: "brian"}
+    render 'hello.json.jb'
   end
 
   def next_method
